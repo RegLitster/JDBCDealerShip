@@ -1,4 +1,4 @@
-package Contracts;
+package com.pluralsight.Contracts;
 
 public abstract class Contract {
     protected String date,customerName,customerEmail,vehicleSold;

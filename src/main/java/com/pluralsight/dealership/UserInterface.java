@@ -1,4 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.dealership;
+
+import com.pluralsight.models.Dealership;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -73,8 +75,7 @@ public class UserInterface {
     }
 
     private void processAllVehiclesRequest() {
-        ArrayList<Vehicle> allVehicles = dealership.getAllVehicles();
-        displayVehicles(allVehicles);
+        //TODO ADD
     }
 
     private void displayVehicles(ArrayList<Vehicle> vehicles) {

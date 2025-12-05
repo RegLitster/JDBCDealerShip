@@ -1,8 +1,4 @@
-package com.pluralsight;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.ArrayList;
+package com.pluralsight.dealership;
 
 public class Vehicle {
     private int vin;
