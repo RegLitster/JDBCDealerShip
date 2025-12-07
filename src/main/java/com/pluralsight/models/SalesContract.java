@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class SalesContract {
 
-    private int id;                     // Primary key
+    private int id;
     private int vin;
     private String customerName;
     private String customerEmail;

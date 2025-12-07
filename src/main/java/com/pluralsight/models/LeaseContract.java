@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class LeaseContract {
 
-    private int id;                  // PK
+    private int id;
     private int vin;
     private String customerName;
     private String customerEmail;

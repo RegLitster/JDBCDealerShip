@@ -2,7 +2,7 @@ package com.pluralsight.models;
 
 public class Dealership {
 
-    private int id;               // NEW for database
+    private int id;
     private String name;
     private String address;
     private String phone;

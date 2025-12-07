@@ -39,7 +39,7 @@ public class DealershipFileManager {
                 vehicles.add(vehicle);
             }
 
-            dealership = new Dealership(dealershipName, dealershipAddress, dealershipPhone, vehicles);
+           // dealership = new Dealership(dealershipName, dealershipAddress, dealershipPhone, vehicles);
 
         } catch (Exception e) {
             e.printStackTrace();

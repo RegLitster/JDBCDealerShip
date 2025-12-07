@@ -1,26 +1,27 @@
 package com.pluralsight.data;
 
-
 import org.apache.commons.dbcp2.BasicDataSource;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 public class DataManager {
 
-    private Connection connection;
+    private BasicDataSource dataSource;
 
     public DataManager(String database, String username, String password) {
-        BasicDataSource ds = new BasicDataSource();
-        ds.setUrl("jdbc:mysql://127.0.0.1:3306/" + database);
-        ds.setUsername(username);
-        ds.setPassword(password);
+        dataSource = new BasicDataSource();
+        dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/" + database);
+        dataSource.setUsername(username);
+        dataSource.setPassword(password);
 
-        try {
-            connection = ds.getConnection();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        // Optional: Pool settings
+        dataSource.setInitialSize(5);
+        dataSource.setMaxTotal(10);
     }
 
-
+    // Get a new connection from the pool
+    public static Connection getConnection() throws SQLException {
+        return dataSource.getConnection();
+    }
 }

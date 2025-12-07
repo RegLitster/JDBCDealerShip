@@ -2,7 +2,7 @@ package com.pluralsight.models;
 
 public class Vehicle {
 
-    private int vin;                 // Primary key from DB
+    private int vin;
     private int year;
     private String make;
     private String model;
@@ -10,7 +10,7 @@ public class Vehicle {
     private String color;
     private int odometer;
     private double price;
-    private int dealershipId;       // Foreign key to dealership table
+    private int dealershipId;
 
     public Vehicle() {}
 
